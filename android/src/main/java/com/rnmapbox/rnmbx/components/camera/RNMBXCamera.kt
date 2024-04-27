@@ -195,8 +195,10 @@ class RNMBXCamera(private val mContext: Context, private val mManager: RNMBXCame
 
             it.setDuration(0)
             it.setMode(CameraMode.NONE)
-            val item = it.toCameraUpdate(mapView)
-            item.run()
+
+            updateCamera(it)
+//            val item = it.toCameraUpdate(mapView)
+//            item.run()
         }
     }
 
